@@ -4,7 +4,7 @@
 
 This project is pulled in as a dependency by a test project - there is no need for you to download and install it separately. However, the setup for projects that use it would be the same, so we discuss that in this README.
 
-We will set up iOS and Android to work with Appium. Once you have completed this setup, your workflow is to download the specific mobile test project, for example [Digby Mobile Automation](http://git.ent.oclc.org/projects/AUTOMATION/repos/digbymobileautomation/browse). Then you would connect your mobile device, start Appium from the command line in a shell, and then run the tests in a different shell using the Ruby ```build execute``` command.
+We will set up iOS and Android to work with Appium. Once you have completed this setup, your workflow is to download the specific mobile test project. Then you would connect your mobile device, start Appium from the command line in a shell, and then run the tests in a different shell using the Ruby ```build execute``` command.
 
 The setup is different for iOS and Android, and will take some effort.
 
@@ -352,7 +352,7 @@ caps:
   automationName: 'XCUITest'
   xcodeOrgID: 'Sample ID'
   xcodeSigningId: 'iPhone Developer'
-  app: 'app/Digby.ipa'
+  app: 'app/SampleApp.ipa'
   udid: 'fghgfhfghfghfghfghfgh6fghfghfghf87'
   showXcodeLog: 'true'
   updatedWDABundleId: 'Sample.WebDriverAgentRunner'
