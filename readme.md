@@ -379,6 +379,10 @@ page_object.click_element(page_object.page_element)
 
 ## contexts
 
+For an Android/Hybrid app setup, you may get an error saying you do not have a chromedriver to run the webview context you wan. To resolve this more easily, you can allow appium to install the appropriate chromedrivers by starting appium with the following parameters:
+
+>appium --allow-insecure chromedriver_autodownload
+
 Try these commands:
 
 >@driver.available_contexts
