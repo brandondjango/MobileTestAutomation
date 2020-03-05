@@ -148,6 +148,9 @@ Check the version.
     ***NOTE:*** Depending on your version of Appium, this directory might be in another folder:
     
     ```~/.nvm/versions/node/*INSERT_NODE_VERSION*/lib/node_modules/appium/node_modules/appium-xcuitest-driver```
+    
+    As of Appium v1.16, the driver is here:
+    '''/Users/lockridb/.nvm/versions/node/v11.1.0/lib/node_modules/appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent'''
 
 3.  After Xcode opens, click on "WebDriverAgent project" at the top of the left pane. In the center pain, all of the components will be selectable next to the yellow toolbox. 
 
