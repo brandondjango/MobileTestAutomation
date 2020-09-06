@@ -1,0 +1,21 @@
+#iOS simulator template
+
+#no udid required
+
+caps:
+  platformName: 'iOS'
+  #platformVersion: '11.0'  #Required
+  #deviceName: 'iPhone 8'   #Required, grab from "xcrun simctl list"
+  automationName: 'XCUITest'
+  xcodeOrgID: '6N85WEFMZV'
+  xcodeSigningId: 'iPhone Developer'
+  newCommandTimeout: 1800
+  clearSystemFiles: 'true'
+  showXcodeLog: 'true'
+  useCarthageSsl: 'true'
+  updatedWDABundleId: '-N85WEFMZV.WebDriverAgentRunner'
+  webkitResponseTimeout: 10000
+  startIWDP: true
+
+appium_lib:
+  server_url: 'http://0.0.0.0:4723/wd/hub/'

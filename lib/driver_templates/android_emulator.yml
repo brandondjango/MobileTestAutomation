@@ -1,0 +1,13 @@
+#Android emulator template
+
+caps:
+  platformName: 'Android'
+  deviceName: 'Sample Name'
+  #avd: "Nexus_5X_API_28" #Required
+  automationName: 'Appium'
+  #app: ''
+  newCommandTimeout: 1800
+  clearSystemFiles: 'true'
+
+appium_lib:
+  server_url: 'http://0.0.0.0:4723/wd/hub/'

@@ -1,0 +1,24 @@
+#iOs real device template
+
+
+caps:
+  platformName: 'iOS'
+  #platformVersion: '11.0'                              #Required
+  deviceName: 'Sample Name'
+  automationName: 'XCUITest'
+  xcodeOrgID: '6N85WEFMZV'
+  xcodeSigningId: 'iPhone Developer'
+  #app: ''
+  newCommandTimeout: 1800
+  clearSystemFiles: 'true'
+  #udid: 'b8864016dbe26cc48d87fe939f6285e8d1ad2f87'     #Required
+  showXcodeLog: 'true'
+  useCarthageSsl: 'true'
+  updatedWDABundleId: '-N85WEFMZV.WebDriverAgentRunner'
+  webkitResponseTimeout: 10000
+  startIWDP: true
+
+appium_lib:
+  server_url: 'http://0.0.0.0:4723/wd/hub/'
+
+

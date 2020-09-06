@@ -1,0 +1,7 @@
+require 'require_all'
+require 'selenium-webdriver'
+require 'page-object'
+require 'appium_lib'
+require 'waitutil'
+require_rel './driver_helper.rb'
+require_rel 'driver_templates'

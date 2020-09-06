@@ -1,0 +1,12 @@
+# Android physical device template
+
+caps:
+  platformName: 'Android'
+  #deviceName: '' #required
+  automationName: 'uiautomator2'
+  #app: '' #required
+  newCommandTimeout: 1800
+  clearSystemFiles: 'true'
+
+appium_lib:
+  server_url: 'http://0.0.0.0:4723/wd/hub/'
