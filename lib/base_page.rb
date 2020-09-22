@@ -92,6 +92,22 @@ module Mobile
       end
     end
 
+    def swipe_up
+      Appium::TouchAction.new(@driver).swipe(:start_y=> 500, :end_y => 200).perform
+    end
+
+    def swipe_down
+      Appium::TouchAction.new(@driver).swipe(:start_y=> 200, :end_y => 500).perform
+    end
+
+    def swipe_right
+      Appium::TouchAction.new(@driver).swipe(:end_x=> 500, :start_x => 200).perform
+    end
+
+    def swipe_left
+      Appium::TouchAction.new(@driver).swipe(:end_x=> 200, :start_x => 500).perform
+    end
+
     def set_field(element, value)
       clear_element(element)
       element.send_keys(value)
