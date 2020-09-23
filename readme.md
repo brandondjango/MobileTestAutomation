@@ -74,7 +74,7 @@ At the time this guide is being written, it is suggested version 1.13.0 is used 
         
 3. Find the Android SDK directory. "platform-tools" and "tools" folders should be in the folder. 
 
-4. Add those folders to your path.  They need to be in your path so Appium has access to them.
+4. Add those folders to your path.  They need to be in your path so Appium has access to them.(note, latest versions of mac have changed .bash_profile to .zprofile)
    ``` 
    export ANDROID_HOME=/Users/*INSERT_USER_DIRECTORY*/Library/Android/sdk/
    export PATH=$PATH:$ANDROID_HOME/tools
