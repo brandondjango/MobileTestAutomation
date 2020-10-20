@@ -22,6 +22,10 @@ module Mobile
       @driver.set_context(context)
     end
 
+    def go_to_url(url)
+      @driver.driver.get(url)
+    end
+
     #switches to first webview context that is not your current context
     def switch_webview_contexts
       available_contexts = get_available_contexts
