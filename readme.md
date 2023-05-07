@@ -1,5 +1,7 @@
 # Mobile Automation using Appium
 
+# Note: this project is out of date with APPIUM 2!! fixes on the way
+
 ## Introduction
 
 This project is pulled in as a dependency by a test project - there is no need for you to download and install it separately. However, the setup for projects that use it would be the same, so we discuss that in this README.
