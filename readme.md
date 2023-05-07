@@ -407,7 +407,7 @@ First: https://github.com/JonGabilondoAngulo/idevicelocation
 @driver.driver.set_location(latitude, longitude, altitude)
 @driver.set_location({:latitude => 18, :longitude => 33,:altitude => 0})
 
-
+.
 
 
 
