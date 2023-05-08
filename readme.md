@@ -1,7 +1,5 @@
 # Mobile Automation using Appium
 
-# Note: this project is out of date with APPIUM 2!! fixes on the way
-
 ## Introduction
 
 This project is pulled in as a dependency by a test project - there is no need for you to download and install it separately. However, the setup for projects that use it would be the same, so we discuss that in this README.
@@ -12,11 +10,11 @@ The setup is different for iOS and Android, and will take some effort.
 
 ## Requirements
 
-At minimum:
-* Node - 10.16.0 or greater
+At minimum(what I am using at least):
+* Node - v18.16.0 or greater
 * Node Package Manager(NPM)
-* Appium - 1.13.0(supports up to iOS 12.3) or greater installed globally
-* Carthage - 0.33.0 install with brew
+* Appium - 2.0.0-beta.66 or greater installed globally(I have recently upgraded to this. I have some instructions for older versions)
+* Carthage - 0.39.0 install with brew
 
 For Android:
 * Android SDK
@@ -40,7 +38,9 @@ There are two options to install Appium: via NPM or through Desktop.  This guide
 
 1. To start NPM installation:
 
-```npm install -g appium```
+```npm install -g appium@next```
+
+*^Update here! this should pull Appium 2.0!*
 
 You can specify a version number by appending one to the end of "appium" with "@*INSERT_VERSION_NUMBER"
 
@@ -134,7 +134,37 @@ Check the version.
 
 0.33.0 is later works.
 
-#### Sign the Appium Webdriver and Build the Test Project
+#### Appium Driver install instructions for Appium 2.0
+
+"Appium drivers (UIAutomator2 driver, XCUITest driver, Espresso Driver, etc.) have been tightly coupled with Appium Server until now. With the new update, these drivers get separated from the Appium Server and can be installed separately depending on user requirements. This feature also creating custom drivers for any new platform or special use cases easier." - https://www.accelq.com/blog/appium-2-0-new-features/
+
+To install drivers for your devices(which control the devices you use), you'll want to first look at the drivers you'll need with this command:
+
+```
+appium driver list
+✔ Listing available drivers
+- safari@3.3.3 [installed (npm)]
+- xcuitest@4.26.0 [installed (npm)]
+- gecko@1.1.9 [installed (npm)]
+- uiautomator2@2.24.0 [installed (npm)]
+- mac2 [not installed]
+- espresso [not installed]
+- chromium [not installed]
+```
+
+Then, to actually install one, you'll run a command like:
+
+```agsl
+appium driver install safari
+```
+
+The driver you'll want will depend on the device you are automating.
+
+That's it! When you create a driver running appium, it will use the driver to run the device, and do any neccessary setup when you initialize the driver.
+
+#### Sign the Appium Webdriver and Build the Test Project(version 1.XX)
+
+**NOTE: These are instructions for Appium 1.xx versions!!!**
 
 1. Get the node version you are running. You'll need it for the path in the next step.
 
